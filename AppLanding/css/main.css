@@ -61,7 +61,12 @@ html {
 
 html,
 body {
+  width: 100%;
   height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
 
 body {
@@ -1340,7 +1345,7 @@ h1.intro-header::before {
     right: auto;
     left: 0;
     background-color: #111111;
-    padding: 120px 40px 54px;
+    padding: 70px 40px 54px;
   }
   #header-nav-wrap .header-main-nav {
     display: block;
@@ -1851,7 +1856,6 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   margin: 2rem 0;
   padding: 1rem;
   height: 40rem;
-  overflow: scroll;
 }
 
 .about-features .feature:hover {
@@ -1872,7 +1876,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   font-family: 'montserrat-regular', sans-serif;
   font-size: 1.9rem;
   color: #151515;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .about-how {
