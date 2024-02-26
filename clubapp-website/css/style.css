@@ -1,0 +1,1578 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  height: 100vh;
+  max-width: 1200px;
+  color: #202f5a;
+}
+
+.bgContainer {
+  background-color: #d4efa4;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+.icon-container::after {
+  content: '';
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  position: absolute;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/map.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.background-color {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.icon-container {
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  z-index: 3;
+  opacity: 1;
+  background: transparent;
+}
+
+.background-color::after {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  content: 'Club App';
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: 'Fredoka', sans-serif;
+  color: #202f5a;
+}
+
+.background-color::before {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  content: 'Gözden Kaçırmamak İçin Tek Adres';
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Fredoka', sans-serif;
+  color: #202f5a;
+}
+
+.circleImg {
+  z-index: 6;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  width: 20rem;
+  background: transparent;
+}
+
+.discover {
+  background: transparent;
+  position: absolute;
+  bottom: 8%;
+  right: 9%;
+  z-index: 9;
+}
+
+.discover > button {
+  font-family: 'Fredoka', sans-serif;
+  color: #202f5a;
+  font-size: 1.3rem;
+  background-color: #ffd902;
+  width: 10rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.discover:hover {
+  opacity: 0.8;
+  transform: scale(0.98);
+}
+
+/* PAGE 2 */
+#main {
+  font-family: 'Fredoka', sans-serif;
+  color: #202f5a;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('../img/pinkBg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  z-index: 1;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar > div > a {
+  color: inherit;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.navbar > div > h3 {
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+
+.left {
+  margin-top: 10rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.left > h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 7rem;
+  z-index: 3;
+}
+
+.left > p {
+  margin-top: 5rem;
+}
+
+.right {
+  margin-top: 3rem;
+  margin-right: 4rem;
+  position: relative;
+  padding: auto;
+}
+
+.mobile:hover {
+  cursor: pointer;
+}
+
+.mobile > img {
+  padding-top: 1rem;
+}
+
+.appleImg1 {
+  width: 15rem;
+  position: absolute;
+  z-index: 5;
+}
+
+.appleImg2 {
+  width: 15rem;
+  position: absolute;
+  left: 6rem;
+  z-index: 4;
+  transform: rotate(10deg);
+}
+
+.appleImg3 {
+  width: 15rem;
+  position: absolute;
+  left: 8rem;
+  z-index: 3;
+  transform: rotate(-10deg);
+}
+
+.navpoint > img {
+  width: 13rem;
+  margin-top: -1.5rem;
+}
+
+.earthImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin-top: -3rem;
+}
+
+.earthImg img {
+  background: transparent;
+  width: 8rem;
+}
+
+.navbar-item:hover {
+  cursor: pointer;
+  color: #ff8433;
+}
+
+/* PAGE3 */
+#page3 {
+  font-family: 'Fredoka', sans-serif;
+  color: #202f5a;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('../img/lightback.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+}
+
+video {
+  width: 640px;
+  height: 360px;
+  border-radius: 40% 20% 20% 40% / 40% 20% 20% 40%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.1),
+    -5px 5px 10px rgba(0, 0, 0, 0.1), 5px -5px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  z-index: 5;
+}
+
+#slider {
+  position: relative;
+  bottom: -5rem;
+  width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  width: 4rem;
+  background: transparent;
+}
+
+.arrow2 {
+  position: absolute;
+  width: 4.5rem;
+  background: transparent;
+}
+
+.arrow:hover,
+.arrow2:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: all 0.8s;
+}
+/* PAGE 4 */
+#joinme {
+  font-family: 'Fredoka', sans-serif;
+  color: #202f5a;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('../img/bg4.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+.download-btn {
+  background-color: #f96891;
+  padding: 0.5rem 1rem;
+  border-radius: 5rem;
+  width: 50%;
+  opacity: 1;
+  transition: all 0.5s;
+  font-size: 1rem;
+  font-family: inherit;
+  letter-spacing: 0.1rem;
+  color: #202f5a;
+  font-weight: 600;
+  display: flex;
+  margin-top: 1rem;
+  box-shadow: 0.2rem 0.2rem 1rem;
+}
+
+.download-btn:hover {
+  transform: scale(0.98);
+  transform-origin: bottom;
+  box-shadow: 0.2rem 0.2rem 0.7rem #f96891, -0.2rem -0.2rem 0.7rem #f96891;
+}
+
+.download-btn:first-child {
+  margin-right: 2rem;
+}
+
+.download-btn > img {
+  width: 2rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 1.2rem;
+}
+
+.download-btn > div > a {
+  font-size: 0.8rem;
+  margin-right: 0.9rem;
+  text-decoration: none;
+  color: #202f5a;
+}
+
+.text {
+  margin-top: 0.3rem;
+  text-align: left;
+  line-height: 1rem;
+}
+
+.footer-img {
+  margin-top: 3rem;
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 5rem;
+  box-shadow: 0.2rem 0.2rem 1rem #202f5a, inset -0.2rem -0.2rem #202f5a;
+  animation: wave 5s infinite;
+  opacity: 1;
+  z-index: 300;
+  transform: opacity 0.5s;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  25%,
+  75% {
+    opacity: 0.9;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+@media (min-width: 1300px) {
+  .footer-img {
+    height: 15vw;
+  }
+}
+
+@media (max-width: 990px) {
+  .footer-img {
+    height: 30vw;
+  }
+}
+
+.copyright {
+  margin-top: 2rem;
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  bottom: -3rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.copyright i {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: #202f5a;
+}
+
+.copyright i:hover {
+  color: #f96891;
+}
+
+.sticker1 {
+  position: absolute;
+  width: 2.5rem;
+  bottom: 2.8rem;
+  right: 3rem;
+  transform: rotateY(-180deg);
+}
+
+.sticker2 {
+  position: absolute;
+  width: 5rem;
+  bottom: 8rem;
+  right: 3rem;
+  transform: rotate(-20deg);
+}
+
+/*PAGE 1  RESPONSIVE */
+@media screen and (max-width: 500px) {
+  body {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icon {
+    width: 3rem;
+    height: 4rem;
+  }
+}
+
+/* FULL EKRAN XL */
+@media screen and (min-width: 1127px) {
+  .icon-container {
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+  }
+
+  .icon {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .pencils {
+    grid-area: 6/5/7/6;
+  }
+  .headphone {
+    grid-area: 14/5/15/6;
+  }
+  .ticket {
+    grid-area: 12/8/13/9;
+  }
+  .school {
+    grid-area: 3/16/4/17;
+  }
+  .game {
+    grid-area: 10/15/11/16;
+  }
+  .earth {
+    grid-area: 4/14/5/15;
+  }
+  .books {
+    grid-area: 15/16/16/17;
+  }
+  .yellowgirl {
+    grid-area: 3/6/4/7;
+  }
+  .redboy {
+    grid-area: 15/6/18/7;
+  }
+  .greenboy {
+    grid-area: 10/6/11/7;
+  }
+  .background-color::after {
+    font-size: 3.5rem;
+    top: 42%;
+    left: 47%;
+    font-weight: 500;
+  }
+
+  .background-color::before {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    content: 'Gözden Kaçırmamak İçin Tek Adres';
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .circleImg {
+    z-index: 6;
+    position: absolute;
+    top: 32%;
+    left: 41%;
+    width: 23rem;
+    background: transparent;
+  }
+}
+
+/* L EKRAN */
+@media screen and (min-width: 1024px) and (max-width: 1127px) {
+  .icon {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .ticket {
+    grid-area: 10/8/11/9;
+  }
+  .books {
+    grid-area: 14/17/15/17;
+  }
+  .game {
+    grid-area: 9/17/10/18;
+  }
+  .headphone {
+    grid-area: 14/2/15/3;
+  }
+  .redboy {
+    grid-area: 15/5/16/6;
+  }
+  .pencils {
+    grid-area: 5/2/6/3;
+  }
+  .greenboy {
+    grid-area: 9/4/10/5;
+  }
+  .ticket {
+    grid-area: 12/5/13/6;
+  }
+  .yellowgirl {
+    grid-area: 3/4/4/5;
+  }
+  .school {
+    grid-area: 5/18/6/19;
+  }
+  .redboy {
+    grid-area: 15/4/16/5;
+  }
+  .earth {
+    grid-area: 4/16/5/17;
+  }
+
+  .background-color::before {
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    content: 'Gözden Kaçırmamak İçin Tek Adres';
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .background-color::after {
+    font-size: 3.5rem;
+    top: 42%;
+    left: 44%;
+    font-weight: 500;
+  }
+  .circleImg {
+    z-index: 6;
+    position: absolute;
+    top: 32%;
+    left: 37%;
+    width: 23rem;
+    background: transparent;
+  }
+}
+
+@media screen and (max-width: 937px) {
+  .icon-container {
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+  }
+
+  .icon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .pencils {
+    grid-area: 6/4/7/5;
+  }
+  .headphone {
+    grid-area: 14/2/15/3;
+  }
+  .ticket {
+    grid-area: 12/5/13/6;
+  }
+  .school {
+    grid-area: 5/16/6/17;
+  }
+  .game {
+    grid-area: 10/15/11/16;
+  }
+  .earth {
+    grid-area: 5/14/8/15;
+  }
+  .books {
+    grid-area: 14/16/15/17;
+  }
+  .yellowgirl {
+    grid-area: 4/3/5/4;
+  }
+  .redboy {
+    grid-area: 15/4/16/5;
+  }
+  .greenboy {
+    grid-area: 10/3/11/4;
+  }
+
+  .background-color::after {
+    font-size: 2.5rem;
+    top: 45%;
+    left: 44%;
+    font-weight: 500;
+  }
+
+  .background-color::before {
+    position: absolute;
+    top: 43%;
+    left: 40%;
+    content: 'Gözden Kaçırmamak İçin Tek Adres';
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .circleImg {
+    z-index: 6;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 20rem;
+    background: transparent;
+  }
+}
+
+/* ARA BOY L-XL*/
+@media screen and (max-width: 1023px) and (min-width: 936px) {
+  .icon-container {
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+  }
+
+  .icon {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .pencils {
+    grid-area: 4/5/5/6;
+  }
+  .headphone {
+    grid-area: 14/2/15/3;
+  }
+  .ticket {
+    grid-area: 14/6/15/7;
+  }
+  .school {
+    grid-area: 5/16/6/17;
+  }
+  .game {
+    grid-area: 10/15/11/16;
+  }
+  .earth {
+    grid-area: 5/14/6/15;
+  }
+  .books {
+    grid-area: 15/16/16/17;
+  }
+  .yellowgirl {
+    grid-area: 6/2/7/3;
+  }
+  .redboy {
+    grid-area: 15/4/16/5;
+  }
+  .greenboy {
+    grid-area: 10/5/11/6;
+  }
+
+  .background-color::after {
+    font-size: 3rem;
+    top: 45%;
+    left: 45%;
+    font-weight: 500;
+  }
+
+  .background-color::before {
+    position: absolute;
+    top: 42%;
+    left: 43%;
+    content: 'Gözden Kaçırmamak İçin Tek Adres';
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .circleImg {
+    z-index: 6;
+    position: absolute;
+    top: 37%;
+    left: 37%;
+    width: 20rem;
+    background: transparent;
+  }
+}
+
+/* SMALL VE MEDIUM EKRAN */
+@media screen and (max-width: 404px) {
+  .bgContainer {
+    background-color: #d4efa4;
+  }
+
+  .background-color {
+    background-color: #d4efa4;
+    padding: 10rem;
+  }
+  body {
+    background-color: #d4efa4 !important;
+    z-index: -10;
+    text-align: center;
+  }
+  .circleImg {
+    left: 33% !important;
+  }
+  .background-color::before {
+    left: 46% !important;
+    top: 12rem !important;
+  }
+  .background-color::after {
+    left: 50% !important;
+    top: 20rem !important;
+    font-size: 2.3rem !important;
+  }
+  .discover {
+    top: 38rem !important;
+    left: 16rem !important;
+  }
+}
+
+@media screen and (min-width: 405px) and (max-width: 500px) {
+  .bgContainer {
+    background-color: #d4efa4;
+  }
+
+  .background-color {
+    background-color: #d4efa4;
+  }
+  body {
+    background-color: #d4efa4 !important;
+    z-index: -10;
+    text-align: center;
+  }
+  .circleImg {
+    left: 25% !important;
+    top: 17rem !important;
+  }
+  .background-color::before {
+    left: 8rem !important;
+    top: 14rem !important;
+  }
+  .background-color::after {
+    left: 40% !important;
+    top: 20rem !important;
+    font-size: 2.3rem !important;
+  }
+
+  .discoverBtn {
+    top: 43rem !important;
+    left: 16rem !important;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .background-img {
+    background-image: url('');
+  }
+
+  .ticket {
+    grid-area: 14/8/15/9;
+    transform: rotate(-45deg);
+  }
+
+  .pencils {
+    grid-area: 3/6/4/7;
+  }
+
+  .school {
+    grid-area: 18/3/19/7;
+    transform: rotate(30deg);
+  }
+
+  .game {
+    grid-area: 18/13/19/14;
+  }
+
+  .earth {
+    grid-area: 5/13/5/14;
+  }
+
+  .greenboy {
+    grid-area: 12/13/13/14;
+  }
+  .books {
+    grid-area: 10/2/11/3;
+  }
+  .ticket {
+    grid-area: 14/12/15/13;
+  }
+
+  .background-color::after {
+    font-size: 2.5rem;
+    top: 44%;
+    left: 37%;
+    font-weight: 500;
+  }
+
+  .background-color::before {
+    position: absolute;
+    top: 33%;
+    left: 29%;
+    content: 'Gözden Kaçırmamak İçin Tek Adres';
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .circleImg {
+    z-index: 6;
+    position: absolute;
+    top: 38%;
+    left: 25%;
+    width: 18rem;
+    background: transparent;
+  }
+
+  .discover {
+    bottom: 15%;
+    right: 19%;
+  }
+
+  .discover > button {
+    font-size: 1rem;
+    width: 7rem;
+  }
+
+  .discoverBtn:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1130px) and (max-width: 1398px) {
+  .game {
+    grid-area: 10/16/11/17;
+  }
+}
+
+@media screen and (min-width: 778px) and (max-width: 935px) {
+  .game {
+    grid-area: 10/17/11/18;
+  }
+
+  .discover {
+    bottom: 15%;
+    right: 9%;
+  }
+
+  .discover > button {
+    font-size: 1rem;
+    width: 7rem;
+  }
+}
+
+/* ANIMATION */
+.animate__animated.animate__tada {
+  animation: tada infinite;
+  animation-duration: 3s;
+}
+
+.animate__animated.animate__fadeIn {
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+
+.animate__animated.animate__slideInDown {
+  animation: slideInDown;
+  animation-duration: 1s;
+}
+
+.animate__animated.animated__fadeOut {
+  animation: fadeOut;
+  animation-duration: 1s;
+}
+
+.animate__animated.animate__slideInUp {
+  animation: slideInUp;
+  animation-duration: 1s;
+}
+
+.animate__animated.animate__pulse {
+  animation: pulse;
+  animation-duration: 2s;
+}
+
+.animate__animated.pulse {
+  animation: pulse infinite;
+  animation-duration: 1s;
+}
+
+/* PAGE 2 RESPONSIVE */
+@media screen and (max-width: 510px) {
+  body {
+    height: 100vh;
+  }
+  .right > img {
+    width: 2rem;
+  }
+  .navbar {
+    margin-top: -1rem !important;
+  }
+  .navbar a {
+    font-size: 1rem !important;
+    margin-right: 0.5rem !important;
+  }
+
+  .navbar h3 {
+    margin-top: 1.6rem !important;
+    font-size: 1rem !important;
+  }
+
+  .navpoint img {
+    width: 6rem !important;
+  }
+
+  .left {
+    margin: 0 !important;
+    font-size: 1rem !important;
+    margin-top: 0.1rem !important;
+  }
+
+  .left > h1 {
+    font-size: 1.6rem !important;
+  }
+
+  .earthImg {
+    width: 4rem;
+  }
+
+  .left > p {
+    margin-top: 0 !important;
+    margin-bottom: -2rem;
+  }
+
+  .right > img {
+    width: 10rem !important;
+    top: 3rem !important;
+  }
+
+  .appleImg1 {
+    left: 7rem !important;
+  }
+
+  .appleImg2 {
+    left: 10rem !important;
+    transform: rotate(30deg) !important;
+  }
+
+  .appleImg3 {
+    left: 10rem !important;
+    transform: rotate(-30deg) !important;
+  }
+
+  .earthImg {
+    left: 8rem !important;
+  }
+
+  .booksblue {
+    width: 2rem !important;
+    left: 8rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  .right > img {
+    top: 2rem;
+    width: 11rem;
+  }
+
+  .appleImg1 {
+    left: 5rem;
+  }
+
+  .appleImg2 {
+    left: 10rem;
+    transform: rotate(10deg);
+  }
+
+  .appleImg3 {
+    left: 15rem;
+    transform: rotate(-10deg);
+  }
+  .left {
+    margin-top: 0.5rem;
+  }
+
+  .left > h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+  }
+
+  .left > p {
+    margin-top: 1rem;
+    margin-bottom: -2rem;
+  }
+
+  .navbar > div > h3 {
+    margin-left: 1.5rem;
+  }
+
+  .navbar > div > a {
+    font-size: 1rem;
+  }
+
+  .navpoint > img {
+    width: 10rem;
+    margin-top: -1.5rem;
+  }
+
+  .earthImg {
+    left: 4rem;
+    top: 1.6rem;
+    transform: rotateY(-180deg);
+  }
+
+  .earthImg img {
+    width: 6rem;
+  }
+
+  .booksblue {
+    width: 1rem;
+    left: 10.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .appleImg1 {
+    left: 10rem;
+  }
+  .appleImg2 {
+    left: 15rem;
+  }
+
+  .appleImg3 {
+    left: 20rem;
+  }
+
+  .left {
+    margin-top: 0.5rem;
+  }
+
+  .left > h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-top: -1rem;
+  }
+
+  .left > p {
+    margin-top: 1rem;
+    margin-bottom: -2rem;
+  }
+
+  .earthImg {
+    left: 9rem;
+    top: 1rem;
+    transform: rotateY(-180deg);
+  }
+
+  .earthImg img {
+    width: 7rem;
+  }
+  .booksblue {
+    left: 10rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1150px) {
+  .right > img {
+    top: 2rem;
+    width: 16rem;
+  }
+
+  .appleImg1 {
+    left: 1rem;
+  }
+
+  .appleImg2 {
+    left: 7rem;
+    transform: rotate(10deg);
+  }
+
+  .appleImg3 {
+    left: 10rem;
+    transform: rotate(-10deg);
+  }
+  .left > p {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1150px) and (max-width: 1390px) {
+  .right > img {
+    width: 17rem;
+  }
+
+  .appleImg1 {
+    left: 5rem;
+  }
+
+  .appleImg2 {
+    left: 10rem;
+    transform: rotate(10deg);
+  }
+
+  .appleImg3 {
+    left: 15rem;
+    transform: rotate(-10deg);
+  }
+
+  .left > h1 {
+    font-size: 5rem;
+  }
+
+  .left > p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .earthImg {
+    left: -1rem;
+  }
+
+  .earthImg img {
+    width: 9rem;
+  }
+}
+
+@media screen and (max-width: 1197px) and (min-width: 1144px) {
+  .earthImg {
+    left: -6rem;
+  }
+
+  .earthImg img {
+    width: 9rem;
+  }
+  .booksblue {
+    left: -3rem;
+  }
+}
+
+@media screen and (min-width: 1391px) and (max-width: 1400px) {
+  .right > img {
+    width: 17rem;
+  }
+
+  .appleImg1 {
+    left: 5rem;
+  }
+
+  .appleImg2 {
+    left: 10rem;
+    transform: rotate(10deg);
+  }
+
+  .appleImg3 {
+    left: 15rem;
+    transform: rotate(-10deg);
+  }
+
+  .left > h1 {
+    font-size: 5rem;
+  }
+
+  .left > p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .right {
+    margin-right: 4rem;
+  }
+
+  .right > img {
+    width: 20rem;
+  }
+
+  .appleImg1 {
+    left: 10rem;
+  }
+
+  .appleImg2 {
+    left: 15rem;
+    transform: rotate(10deg);
+  }
+
+  .appleImg3 {
+    left: 20rem;
+    transform: rotate(-10deg);
+  }
+
+  .left > h1 {
+    font-size: 5rem;
+  }
+
+  .left > p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .earthImg {
+    margin-top: -3rem;
+  }
+
+  .earthImg img {
+    width: 10rem;
+  }
+
+  .booksblue {
+    left: 1rem;
+  }
+}
+
+/* PAGE 3 RESPONSIVE */
+@media screen and (max-width: 500px) {
+  body {
+    height: 100vh;
+  }
+  video {
+    position: absolute !important;
+    width: 400px !important;
+    left: 3rem !important;
+    top: 2rem;
+    right: 0 !important;
+    border-radius: 0 !important;
+    height: 290px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  video {
+    position: absolute;
+    width: 540px;
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  video {
+    position: absolute;
+    width: 540px;
+    height: 360px;
+    left: -1rem;
+    border-radius: 0;
+  }
+
+  .arrow {
+    left: 16rem;
+    top: 20rem;
+  }
+  .arrow2 {
+    top: 19.7rem;
+    left: 10rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  video {
+    position: absolute;
+    left: 1.5rem;
+    height: 360px;
+  }
+  .arrow {
+    left: 24rem;
+    top: 20rem;
+  }
+  .arrow2 {
+    top: 19.7rem;
+    left: 19rem;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .arrow {
+    top: -2.4rem;
+    left: -1rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1088px) {
+  video {
+    position: absolute;
+    top: 5rem;
+    width: 470px;
+    height: 450px;
+  }
+  .arrow {
+    left: 15rem;
+    top: -3rem;
+  }
+  .arrow2 {
+    left: 10rem;
+    top: -3.2rem;
+  }
+}
+
+@media screen and (min-width: 1089px) and (max-width: 1360px) {
+  video {
+    position: absolute;
+    top: 5.2rem;
+    width: 520px;
+    height: 450px;
+  }
+  .arrow {
+    left: 15rem;
+    top: -4rem;
+  }
+  .arrow2 {
+    left: 10rem;
+    top: -4rem;
+  }
+}
+
+@media screen and (min-width: 1361px) and (max-width: 1470px) {
+  video {
+    position: absolute;
+    width: 650px;
+    height: 560px;
+    top: 3.2rem;
+  }
+  .arrow {
+    left: 18rem;
+    top: -4rem;
+  }
+  .arrow2 {
+    left: 13rem;
+    top: -4.3rem;
+  }
+}
+
+@media screen and (min-width: 1470px) {
+  video {
+    position: absolute;
+    width: 710px;
+    height: 560px;
+    top: 3.2rem;
+  }
+  .arrow {
+    left: 19rem;
+    top: -4rem;
+  }
+  .arrow2 {
+    left: 14rem;
+    top: -4rem;
+  }
+}
+
+/* PAGE 4 RESPONSIVE */
+@media (max-width: 480px) {
+  .copyright {
+    bottom: -3rem !important;
+  }
+
+  .footer-img {
+    border-radius: 0;
+  }
+
+  .sticker1 {
+    width: 2rem;
+    bottom: 1rem !important;
+  }
+
+  .sticker2 {
+    width: 3rem;
+    bottom: 6rem !important;
+  }
+
+  .download-btn {
+    width: 50% !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .copyright {
+    bottom: -10rem !important;
+  }
+
+  .footer-img {
+    border-radius: 0;
+  }
+
+  .sticker1 {
+    width: 3rem !important;
+    bottom: 1rem !important;
+  }
+
+  .sticker2 {
+    width: 3rem;
+    bottom: 8rem !important;
+  }
+
+  .download-btn {
+    width: 50% !important;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .copyright {
+    bottom: -8rem;
+  }
+
+  .footer-img {
+    border-radius: 0;
+  }
+
+  .sticker1 {
+    bottom: 1rem;
+  }
+
+  .sticker2 {
+    bottom: 6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .copyright {
+    bottom: -3rem;
+  }
+
+  .sticker1 {
+    bottom: 1.5rem;
+  }
+
+  .sticker2 {
+    bottom: 6rem;
+  }
+}
+
+@media (max-width: 613px) {
+  .copyright {
+    bottom: -8rem;
+  }
+
+  .sticker1 {
+    bottom: 1.5rem;
+  }
+
+  .sticker2 {
+    bottom: 6rem;
+  }
+}
+
+@media (max-width: 643px) {
+  .copyright {
+    bottom: -6rem;
+  }
+
+  .sticker1 {
+    bottom: 1.5rem;
+  }
+
+  .sticker2 {
+    bottom: 7rem;
+  }
+}
+
+@media (max-width: 743px) {
+  .copyright {
+    bottom: -6rem;
+  }
+
+  .sticker1 {
+    bottom: 1.5rem;
+  }
+
+  .sticker2 {
+    bottom: 7rem;
+  }
+}
+
+@media (min-width: 745px) {
+  .copyright {
+    bottom: -4rem;
+  }
+
+  .sticker1 {
+    bottom: 1.2rem;
+    right: 3rem;
+  }
+
+  .sticker2 {
+    bottom: 6.4rem;
+    right: 3rem;
+  }
+}
+
+@media (min-width: 810px) {
+  .copyright {
+    bottom: -1rem;
+  }
+  .sticker1 {
+    bottom: 1.5rem;
+    right: 2rem;
+  }
+
+  .sticker2 {
+    bottom: 6.4rem;
+    right: 2rem;
+  }
+}
+
+@media (min-width: 1176px) {
+  .copyright {
+    bottom: -2rem;
+  }
+  .sticker1 {
+    width: 4rem;
+    bottom: 1.5rem;
+    right: 2rem;
+  }
+
+  .sticker2 {
+    width: 6rem;
+    bottom: 10rem;
+    right: 2rem;
+  }
+}
