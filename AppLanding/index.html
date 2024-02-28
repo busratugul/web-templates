@@ -8,7 +8,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-   
     <script type="text/javascript" async="" src="./js/script.js"></script>
     <script async="" src="./js/analytics.js"></script>
     <script>
@@ -24,13 +23,7 @@
         a.async = 1
         a.src = g
         m.parentNode.insertBefore(a, m)
-      })(
-        window,
-        document,
-        'script',
-        './js/analytics.js',
-        'ga'
-      )
+      })(window, document, 'script', './js/analytics.js', 'ga')
       ga('create', 'UA-3920997-4', 'auto')
       ga('send', 'pageview')
     </script>
@@ -51,6 +44,7 @@
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/vendor.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./lib/swiper.js">
 
     <!-- script
    ================================================== -->
@@ -98,21 +92,7 @@
         height: 786px;
         width: 1680px;
       "
-    >
-      <!-- <img
-        class="parallax-slider"
-        src="./images/hero-bg.jpg"
-        style="
-          transform: translate3d(0px, 0px, 0px);
-          position: absolute;
-          top: -167px;
-          left: 0px;
-          height: 1120px;
-          width: 1680px;
-          max-width: none;
-        "
-      /> -->
-    </div>
+    ></div>
     <div class="pace pace-inactive">
       <div
         class="pace-progress"
@@ -129,7 +109,7 @@
    ================================================== -->
     <header id="header" class="row">
       <div class="header-logo">
-        <a href="#index.html">Club App</a>
+        <a href="#index.html">Öğrenci Kulüp</a>
       </div>
 
       <nav id="header-nav-wrap">
@@ -175,7 +155,7 @@
             <h1 data-aos="fade-up" class="aos-init aos-animate">
               Gençliğin Kalbinde Atan<br />
               Sosyal Platform:<br />
-              Club App
+              Öğrenci Kulüp
             </h1>
 
             <div class="buttons" data-aos="fade-up">
@@ -236,7 +216,7 @@
       <div class="row about-intro">
         <div class="col-four">
           <h1 class="intro-header aos-init aos-animate" data-aos="fade-up">
-            About Our App
+            Nasıl Yani?
           </h1>
         </div>
         <div class="col-eight">
@@ -262,7 +242,11 @@
 
               <p>
                 Kulüplere katılmak, gençlerin arkadaş çevrelerini
-                genişletmelerine ve yeni dostluklar kurmalarına olanak tanır. Benzer ilgi ve tutkuları paylaşan gençlerin diğerleriyle bağlantı kurmalarını sağlar. Bu deneyimler, gençlerin sosyal becerilerini geliştirirken aynı zamanda çeşitli kültürleri ve bakış açılarını anlamalarına yardımcı olur, böylece onlar için
+                genişletmelerine ve yeni dostluklar kurmalarına olanak tanır.
+                Benzer ilgi ve tutkuları paylaşan gençlerin diğerleriyle
+                bağlantı kurmalarını sağlar. Bu deneyimler, gençlerin sosyal
+                becerilerini geliştirirken aynı zamanda çeşitli kültürleri ve
+                bakış açılarını anlamalarına yardımcı olur, böylece onlar için
                 yeni ve anlamlı ilişkilerin kapılarını aralar.
               </p>
             </div>
@@ -276,7 +260,13 @@
               <h3>Sev</h3>
 
               <p>
-                Kulüpler, gençlerin çevreyi ve doğayı sevmelerini teşvik eden önemli bir platformdur.Gençlerin doğayla doğrudan etkileşim kurmaları çevresel duyarlılık kazanmalarını sağlar. Gençlerin doğanın güzelliklerini keşfetmelerine ve ona olan sevgilerini derinleştirmelerine yardımcı olurken, aynı zamanda gelecek nesiller için bir sürdürülebilir dünya yaratma konusundaki sorumluluklarını da öğrenmelerini sağlar.
+                Kulüpler, gençlerin çevreyi ve doğayı sevmelerini teşvik eden
+                önemli bir platformdur.Gençlerin doğayla doğrudan etkileşim
+                kurmaları çevresel duyarlılık kazanmalarını sağlar. Gençlerin
+                doğanın güzelliklerini keşfetmelerine ve ona olan sevgilerini
+                derinleştirmelerine yardımcı olurken, aynı zamanda gelecek
+                nesiller için bir sürdürülebilir dünya yaratma konusundaki
+                sorumluluklarını da öğrenmelerini sağlar.
               </p>
             </div>
           </div>
@@ -313,7 +303,8 @@
                 yaparak yeni bilgiler edinmek gibi etkinlikler, gençlerin
                 kendilerini geliştirmelerini ve yeni beceriler kazanmalarını
                 sağlar. Bu deneyimler, gençlerin öğrenme sürecinde daha etkin ve
-                keyifli bir şekilde yer almalarını sağlar, onları geleceğe hazırlar.
+                keyifli bir şekilde yer almalarını sağlar, onları geleceğe
+                hazırlar.
               </p>
             </div>
           </div>
@@ -327,8 +318,8 @@
 
               <p>
                 Kulüplerde yer almak, gençlerin fikirlerini özgürce ifade etmeyi
-                ve savunmayı öğrenmelerini sağlar. Kendi düşüncelerini cesurca ifade
-                etmelerine ve başkalarıyla etkili bir şekilde iletişim
+                ve savunmayı öğrenmelerini sağlar. Kendi düşüncelerini cesurca
+                ifade etmelerine ve başkalarıyla etkili bir şekilde iletişim
                 kurmalarına olanak tanır. Bu deneyimler, gençlerin özgüvenlerini
                 artırırken aynı zamanda demokratik bir toplumun temellerini atma
                 becerisi kazanmalarına yardımcı olur.
@@ -357,7 +348,26 @@
         <!-- end features-list -->
       </div>
       <div class="row about-bottom-image">
-        <img
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <!-- <img
           src="./images/app-screens-1200.png"
           srcset="
             images/app-screens-600.png   600w,
@@ -368,7 +378,7 @@
           alt="App Screenshots"
           data-aos="fade-up"
           class="aos-init aos-animate"
-        />
+        /> -->
       </div>
       <!-- end about-bottom-image -->
       <!-- end about-features -->
@@ -627,5 +637,6 @@
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script type="module" src="./lib/swiper.js"></script>
   </body>
 </html>
