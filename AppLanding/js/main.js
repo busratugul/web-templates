@@ -89,6 +89,28 @@
 
 	};  	
 
+	document.addEventListener("DOMContentLoaded", function() {
+		const swiper = new Swiper('.swiper', {
+			loop: true,
+			slidesPerView: "auto",	 
+			centeredSlides: true,
+			freeMode: true,
+			loop: true,
+			autoplay: {
+			  delay: 4000,
+			  disableOnInteraction: false,
+			},
+			
+			effect: 'fade',
+			fadeEffect: {
+			  crossFade: true
+			},
+			speed: 1500,
+		  });
+	});
+	
+
+
 
   /* Highlight the current section in the navigation bar
 	* ------------------------------------------------------ */
