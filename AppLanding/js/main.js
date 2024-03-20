@@ -30,7 +30,7 @@
 			$('html, body').animate({ scrollTop: 0 }, 'normal');
 
          // will fade out the whole preloader DIV that covers the website.
-	      $("#preloader").delay(500).fadeOut('slow');
+	      $("#preloader").delay(5000).fadeOut('slow');
 	  
 	  	});
 	};
