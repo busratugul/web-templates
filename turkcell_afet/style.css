@@ -1,0 +1,220 @@
+:root {
+  --blue: #07377e;
+  --yellow: #ffcd00;
+  --gray: #f0f1f2;
+  --alanBosluk: 70px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: 'greycliff_medium';
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  color: var(--blue);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--gray);
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+img {
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+.icon {
+  width: 18rem;
+}
+
+header {
+  background-color: var(--blue);
+  color: var(--yellow);
+  height: 8rem;
+  align-items: center;
+}
+
+.turkcell-logo {
+  width: 4rem;
+  align-self: center;
+}
+
+.section-1 {
+  background-color: var(--blue);
+  color: var(--yellow);
+}
+
+.afet-durumu {
+  width: 100%;
+}
+
+.section-2 {
+  background-color: var(--blue);
+}
+
+.section-2 h2,
+.section-3 h2 {
+  font-weight: 600;
+}
+
+.section-2 h2 {
+  color: var(--yellow);
+}
+
+.section-2 h4 {
+  color: var(--gray);
+}
+
+.section-2 p {
+  color: var(--gray);
+}
+
+.section-2 .boxes {
+  overflow-x: scroll;
+}
+
+.section-3 {
+  background-color: var(--gray);
+  color: var(--blue);
+}
+
+@media (min-width: 992px) {
+  .logo-dijital-bahar {
+    margin-top: -70px;
+  }
+}
+@media (max-width: 991px) {
+  .turkcell-logo {
+    width: 3rem;
+    display: block;
+  }
+
+  .top-links {
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 10px;
+    white-space: nowrap;
+  }
+
+  .top-links a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .slider-Main {
+    margin: 0;
+    padding: 0;
+  }
+  .slider-Main .swiper-container {
+    width: 94%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    width: 90%;
+  }
+
+  .carousel-text {
+    padding: 15px;
+    width: auto;
+  }
+  .carousel-text .title {
+    font-size: 26px;
+    line-height: 26px;
+    width: 50%;
+  }
+  .carousel-text .titleMedium {
+    font-size: 22px;
+  }
+  .carousel-text p {
+    width: 75%;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .logo-dijital-bahar {
+    margin: 40px auto;
+    display: block;
+  }
+  .mobileCenter {
+    margin: 40px auto;
+    display: block;
+  }
+
+  .down {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .desktop-d {
+    display: none;
+  }
+  .mobile-d {
+    display: block;
+  }
+  .first-screen .headline .row {
+    padding-top: 50px;
+  }
+  .headline {
+    margin: 0px auto;
+  }
+  .first-screen .headline .row {
+    padding: 0;
+  }
+  .headline img {
+    width: 66%;
+  }
+  .headline p {
+    max-width: 100%;
+    font-size: 25px;
+  }
+  .text-part {
+    padding-top: 50px;
+  }
+  .modal-content {
+    position: static;
+    transform: none;
+  }
+  .speakers .title {
+    font-size: 13px;
+  }
+  .speakers .name {
+    font-size: 18px;
+  }
+
+  .turcellBtn {
+    font-size: 15px;
+    font-kerning: auto;
+    letter-spacing: -0.6px;
+  }
+
+  .fit {
+    padding-right: 0px !important;
+  }
+}
