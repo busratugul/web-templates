@@ -61,31 +61,37 @@
       </div>
     </header>
     <main>
-      <section class="section-1" style="height: 60vh">
-        <div class="container mx-auto" style="width: 100%">
-          <img
-            src="./img/afet-durumu-turkcell-01p24.png"
-            alt="afet-durumu"
-            class="d-block border border-warning b-5 mx-auto"
-          />
+      <section class="section-1">
+        <div class="" style="width: 100%">
+          <picture>
+            <source
+              media="(max-width: 992px)"
+              srcset="./img/afet-durumu-turkcell_Mobil_optimize.png"
+            />
+            <img
+              src="./img/afet-durumu-turkcell-01p24.png"
+              alt="afet-durumu"
+              class="d-block border border-warning b-5 mx-auto"
+            />
+          </picture>
         </div>
       </section>
-      <section class="section-2" style="height: 100vh">
-        <div class="container text-center pt-5">
-          <h2 class="mt-5 fs-3" style="font-weight: 600">
+      <section class="section-2">
+        <div class="text-center pt-5">
+          <h2 class="fs-3 mt-5" style="font-weight: 600">
             Turkcellden <br />
             Afet Tedbirleri
           </h2>
-          <p class="mt-4 fs-6">
+          <p class="fs-6">
             Türkiye’nin Turkcell’i olarak iyi günde olduğu gibi kötü günlerde de
             insanımızın yanında olmayı görev bildik. <br />
             Bu yüzden afet anında teknolojilerimizle hızla aksiyon alıyor,
             yaralarımızı birlikte sarıyoruz.
           </p>
 
-          <div class="container boxes">
-            <div class="row w-100 text-center mt-5">
-              <div class="col col-3">
+          <div class="boxes container swiper-container" id="swiperX">
+            <div class="swiper-wrapper w-100 text-center mt-5 boxes-container">
+              <div class="swiper-slide">
                 <img src="./img/box-acil-iletisim.svg" alt="" class="icon" />
                 <div>
                   <h4 class="my-5 fs-5">Acil İletişim Paketi</h4>
@@ -100,7 +106,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col col-3">
+              <div class="swiper-slide">
                 <img
                   src="./img/box-kesintisiz-iletisim.svg"
                   alt=""
@@ -108,7 +114,7 @@
                 />
                 <div>
                   <h4 class="my-5 fs-5">Kesintisiz İletişim</h4>
-                  <p>
+                  <p class="pb-3">
                     Afet durumunda oluşacak yüksek ses trafiğini karşılamak için
                     şebekemizi en yeni, yüksek kapasiteli ve dayanıklı
                     teknolojilerle yönetiyoruz. Afet bölgelerinde zarar gören
@@ -119,7 +125,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col col-3">
+              <div class="swiper-slide">
                 <img
                   src="./img/box-afet-sonrasi-destek.svg"
                   alt=""
@@ -134,7 +140,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col col-3">
+              <div class="swiper-slide">
                 <img src="./img/box-afet-fatura.svg" alt="" class="icon" />
                 <div>
                   <h4 class="my-5 fs-5">Fatura Dondurma ve İptal</h4>
@@ -149,17 +155,17 @@
           </div>
         </div>
       </section>
-      <section class="section-3" style="height: 80vh">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col col-12 my-5">
-              <h2>Afet Sırasında İletişim</h2>
-              <p class="fs-6 mt-4">
-                Afetlerde ve acil durumlarda iletişimin kesintisiz sürdürülmesi
-                hayati önem taşır.
-              </p>
-            </div>
-            <div class="col col-3">
+      <section class="section-3">
+        <div class="py-5 col col-12 text-center">
+          <h2>Afet Sırasında İletişim</h2>
+          <p class="fs-6 mt-4">
+            Afetlerde ve acil durumlarda iletişimin kesintisiz sürdürülmesi
+            hayati önem taşır.
+          </p>
+        </div>
+        <div class="container swiper-container" id="swiperY">
+          <div class="swiper-wrapper text-center boxes-container">
+            <div class="swiper-slide">
               <img
                 src="./img/box-haberlesme.svg"
                 alt="Haberleşme"
@@ -170,7 +176,7 @@
                 Haberleşme için SMS ve internet tabanlı uygulamaları kullanın.
               </p>
             </div>
-            <div class="col col-3">
+            <div class="swiper-slide">
               <img
                 src="./img/box-kisagorusme.svg"
                 alt="Kısa Görüşme"
@@ -182,7 +188,7 @@
                 durumlarda telefon görüşmelerinizi mümkün olduğunca kısa tutun.
               </p>
             </div>
-            <div class="col col-3">
+            <div class="swiper-slide">
               <img
                 src="./img/box-ucretsizwifi.svg"
                 alt="Ücretsiz Wifi"
@@ -191,7 +197,7 @@
               <h4 class="my-5">Ücretsiz WiFi</h4>
               <p>Bulunduğunuz bölgedeki ücretsiz WiFi noktalarına bağlanın.</p>
             </div>
-            <div class="col col-3">
+            <div class="swiper-slide">
               <img
                 src="./img/box-bip-acildurum.svg"
                 alt="BiP Acil Durum"
@@ -207,269 +213,236 @@
           </div>
         </div>
       </section>
-      <section class="section-4" style="height: 100vh">
-        <div class="container">
-          <div class="row text-center">
-            <div class="col col-12">
-              <h2 class="my-5">Afet Öncesinde Planlama</h2>
-            </div>
-            <div class="swiper" id="swiper-1">
-              <button class="swiper-button-prev swiper-btn"></button>
-              <button class="swiper-button-next swiper-btn"></button>
-              <div class="swiper-wrapper">
-                <div class="col col-3 swiper-slide">
-                  <img
-                    src="./img/box-acildurum-iletisim-plani.svg"
-                    alt="Acil durum iletişim planı"
-                    class="icon"
-                  />
-                  <h4 class="my-5">
-                    Acil durum iletişim bilgilerini programlayın
-                  </h4>
-                  <p>
-                    Yapacaklarınızı önceden telefonunuza not edin. Çünkü bazen
-                    panik halinde unutmanız mümkündür.
-                  </p>
-                </div>
-                <div class="col col-3 swiper-slide">
-                  <img
-                    src="./img/box-afet-cantasi.svg"
-                    alt="Afet Çantası"
-                    class="icon"
-                  />
-                  <h4 class="my-5">Afet Çantanızı hazırlayın</h4>
-                  <p>
-                    Afet ne zaman gelir bilinmez. Bu yüzden mutlaka acil
-                    durumlarda kullanılmak üzere bir çanta hazırlayın. Bu
-                    çantada neler olabileceğinin bilgilerini Afad’ın sitesinde
-                    bulabilirsiniz.
-                  </p>
-                </div>
-                <div class="col col-3 swiper-slide">
-                  <img
-                    src="./img//box-ev-hazirlik.svg"
-                    alt="Ev Hazırlık"
-                    class="icon"
-                  />
-                  <h4 class="my-5">Evinizi Hazırlayın</h4>
-                  <p>
-                    Fırtına riski altındaysanız, izolasyonu kurun ve boruların
-                    donmasını nasıl önleyeceğinizi öğrenin. Kasırgaya meyilli
-                    bölgelerde kasırga panjurları takmayı düşünün.
-                  </p>
-                </div>
-                <div class="col col-3 swiper-slide">
-                  <img
-                    src="img/box-havadurumu.svg"
-                    alt="Hava durumu"
-                    class="icon"
-                  />
-                  <h4 class="my-5">Hava durumu raporlarına dikkat edin</h4>
-                  <p>
-                    Meteroloji tarafından verilere dikkat edin. Sel uyarılarında
-                    mutlaka dere yatakları, vadi gibi çukur alanlarda
-                    bulunmayın.
-                  </p>
-                </div>
-                <div class="col col-3 swiper-slide">
-                  <img
-                    src="./img/box-elektrik.svg"
-                    alt="Elekrik"
-                    class="icon"
-                  />
-                  <h4 class="my-5">
-                    Elektrik olmadan birkaç gün evde kalmanız gerekirse diye
-                    malzemeleri toplayın
-                  </h4>
-                  <p>
-                    İlaçlar dahil her bir kişinin özel ihtiyaçlarını aklınızda
-                    bulundurun. Evcil hayvanların ihtiyaçlarını unutma!
-                  </p>
-                </div>
-                <div class="col col-3 swiper-slide">
-                  <img
-                    src="./img/box-afet-cantasi.svg"
-                    alt="Afet Çantası"
-                    class="icon"
-                  />
-                  <h4 class="my-5">
-                    Önemli belgeleri güvenli bir yerde saklayın.
-                  </h4>
-                  <p>veya parola korumalı dijital kopyalar oluşturun</p>
-                </div>
-                <div class="col col-3 swiper-slide">
-                  <img
-                    src="./img/box-iletisimplani.svg"
-                    alt="İletişim Planı"
-                    class="icon"
-                  />
-                  <h4 class="my-5">Bir aile iletişim planı oluşturun</h4>
-                  <p>
-                    Ailenizin ayrılmış olması ihtimaline karşı, bölge dışından
-                    birini merkezi irtibat kişisi olarak seçin. En önemlisi,
-                    acil durum planınızı önceden uygulayın.
-                  </p>
-                </div>
-                <div class="col col-3 swiper-slide">
-                  <img src="./img/box-kamera.svg" alt="Kamera" class="icon" />
-                  <h4 class="my-5">Kameradan yararlanın</h4>
-                  <p>
-                    Sigorta şirketinize hasar fotoğrafları ve video klipleri
-                    çekmek, saklamak ve göndermek için akıllı telefonunuza
-                    yükleyin.
-                  </p>
-                </div>
-                <div class="col col-3 swiper-slide">
-                  <img
-                    class="icon"
-                    src="./img/box-telefon-sarj.svg"
-                    alt="Telefon şarjı"
-                  />
-                  <h4 class="my-5">Telefonunuzu sürekli şarj edin</h4>
-                  <p>
-                    ve elektrik kesintisi durumunda taşınabilir bir telefon şarj
-                    cihazını hazır bulundurun.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col col-12 text-center mt-5">
-              <p class="mt-5">
-                <strong
-                  >Diğer ipuçları ve bilgiler için AFAD web sitesini ziyaret
-                  edin. .</strong
-                >
+      <section class="section-4 text-center px-5">
+        <div class="col col-12">
+          <h2 class="my-5">Afet Öncesinde Planlama</h2>
+        </div>
+        <div class="swiper-container" id="swiper-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./img/box-acildurum-iletisim-plani.svg"
+                alt="Acil durum iletişim planı"
+                class="icon"
+              />
+              <h4 class="my-5">Acil durum iletişim bilgilerini programlayın</h4>
+              <p>
+                Yapacaklarınızı önceden telefonunuza not edin. Çünkü bazen panik
+                halinde unutmanız mümkündür.
               </p>
-              <button class="afad-btn">
-                <a href="https://www.afad.gov.tr/" target="_blank"
-                  >www.afad.gov.tr</a
-                >
-              </button>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/box-afet-cantasi.svg"
+                alt="Afet Çantası"
+                class="icon"
+              />
+              <h4 class="my-5">Afet Çantanızı hazırlayın</h4>
+              <p>
+                Afet ne zaman gelir bilinmez. Bu yüzden mutlaka acil durumlarda
+                kullanılmak üzere bir çanta hazırlayın. Bu çantada neler
+                olabileceğinin bilgilerini Afad’ın sitesinde bulabilirsiniz.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img//box-ev-hazirlik.svg"
+                alt="Ev Hazırlık"
+                class="icon"
+              />
+              <h4 class="my-5">Evinizi Hazırlayın</h4>
+              <p>
+                Fırtına riski altındaysanız, izolasyonu kurun ve boruların
+                donmasını nasıl önleyeceğinizi öğrenin. Kasırgaya meyilli
+                bölgelerde kasırga panjurları takmayı düşünün.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/box-havadurumu.svg"
+                alt="Hava durumu"
+                class="icon"
+              />
+              <h4 class="my-5">Hava durumu raporlarına dikkat edin</h4>
+              <p>
+                Meteroloji tarafından verilere dikkat edin. Sel uyarılarında
+                mutlaka dere yatakları, vadi gibi çukur alanlarda bulunmayın.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/box-elektrik.svg" alt="Elekrik" class="icon" />
+              <h4 class="my-5">
+                Elektrik olmadan birkaç gün evde kalmanız gerekirse diye
+                malzemeleri toplayın
+              </h4>
+              <p>
+                İlaçlar dahil her bir kişinin özel ihtiyaçlarını aklınızda
+                bulundurun. Evcil hayvanların ihtiyaçlarını unutma!
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/box-afet-cantasi.svg"
+                alt="Afet Çantası"
+                class="icon"
+              />
+              <h4 class="my-5">Önemli belgeleri güvenli bir yerde saklayın.</h4>
+              <p>veya parola korumalı dijital kopyalar oluşturun</p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./img/box-iletisimplani.svg"
+                alt="İletişim Planı"
+                class="icon"
+              />
+              <h4 class="my-5">Bir aile iletişim planı oluşturun</h4>
+              <p>
+                Ailenizin ayrılmış olması ihtimaline karşı, bölge dışından
+                birini merkezi irtibat kişisi olarak seçin. En önemlisi, acil
+                durum planınızı önceden uygulayın.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/box-kamera.svg" alt="Kamera" class="icon" />
+              <h4 class="my-5">Kameradan yararlanın</h4>
+              <p>
+                Sigorta şirketinize hasar fotoğrafları ve video klipleri çekmek,
+                saklamak ve göndermek için akıllı telefonunuza yükleyin.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="icon"
+                src="./img/box-telefon-sarj.svg"
+                alt="Telefon şarjı"
+              />
+              <h4 class="my-5">Telefonunuzu sürekli şarj edin</h4>
+              <p>
+                ve elektrik kesintisi durumunda taşınabilir bir telefon şarj
+                cihazını hazır bulundurun.
+              </p>
             </div>
           </div>
         </div>
+        <div class="text-center my-5">
+          <p class="mt-5">
+            <strong
+              >Diğer ipuçları ve bilgiler için AFAD web sitesini ziyaret edin.
+              .</strong
+            >
+          </p>
+          <button class="afad-btn">
+            <a href="https://www.afad.gov.tr/" target="_blank"
+              >www.afad.gov.tr</a
+            >
+          </button>
+        </div>
       </section>
-      <section class="section-5" style="height: 100vh">
-        <div class="container text-center">
-          <div class="row g-5">
-            <div class="col col-12">
-              <h2 class="my-4">Turkcell'den Afet Çalışmaları</h2>
+      <section class="section-5 text-center py-3 px-5">
+        <div class="py-5">
+          <h2>Turkcell'den Afet Çalışmaları</h2>
+        </div>
+        <div class="swiper-container" id="swiper-2">
+          <div class="swiper-wrapper pb-5">
+            <div class="swiper-slide card-swiper" id="card1">
+              <img src="./img/gonulbagi.jpg" alt="Gönül Bağı" />
+              <h4 class="my-5">
+                Turkcell ‘Gönül Bağı Projeleri’yle deprem yaralarını saracak
+              </h4>
+              <p class="p-3">
+                Türkiye’nin Turkcell’i ülkemizde yıkımlara neden olan
+                depremlerin ardından yaraları sarmak için ‘Gönül Bağı Projeleri’
+                ile harekete geçiyor. İstihdamdan üretime, sanattan
+                gastronomiye, psikolojiden eğitime kadar pek çok alanda proje
+                seferberliği başlatan Turkcell, “Bura bizim memleket” diyerek
+                bölgeyi iyileştirmek için yola çıkıyor...
+              </p>
             </div>
-            <div class="swiper" id="swiper-2">
-              <div class="swiper-wrapper pb-5">
-                <div class="col col-3 swiper-slide card-swiper" id="card1">
-                  <img src="./img/gonulbagi.jpg" alt="Gönül Bağı" />
-                  <h4 class="my-5">
-                    Turkcell ‘Gönül Bağı Projeleri’yle deprem yaralarını saracak
-                  </h4>
-                  <p class="p-3">
-                    Türkiye’nin Turkcell’i ülkemizde yıkımlara neden olan
-                    depremlerin ardından yaraları sarmak için ‘Gönül Bağı
-                    Projeleri’ ile harekete geçiyor. İstihdamdan üretime,
-                    sanattan gastronomiye, psikolojiden eğitime kadar pek çok
-                    alanda proje seferberliği başlatan Turkcell, “Bura bizim
-                    memleket” diyerek bölgeyi iyileştirmek için yola çıkıyor...
-                  </p>
-                </div>
-                <div class="col col-3 swiper-slide card-swiper" id="card2">
-                  <img src="./img/acil-mobil.jpg" alt="AFAD acil mobil app" />
-                  <h4 class="my-5">
-                    AFAD Acil mobil uygulamasının altyapısı Turkcell
-                    güvencesinde
-                  </h4>
-                  <p class="p-3">
-                    Türkiye’nin Turkcell’i ülkemizde yıkımlara neden olan
-                    depremlerin ardından yaraları sarmak için ‘Gönül Bağı
-                    Projeleri’ ile harekete geçiyor. İstihdamdan üretime,
-                    sanattan gastronomiye, psikolojiden eğitime kadar pek çok
-                    alanda proje seferberliği başlatan Turkcell, “Bura bizim
-                    memleket” diyerek bölgeyi iyileştirmek için yola çıkıyor...
-                  </p>
-                </div>
-                <div class="col col-3 swiper-slide card-swiper" id="card3">
-                  <img
-                    src="./img/gonul-bagi-ile-hatayda.jpg"
-                    alt="Gönül Bağı Hatayda"
-                  />
-                  <h4 class="my-5">
-                    Gönül Bağı’ ile Hatay’da yüzlerce kişiye iş, binlerce kişiye
-                    eğitim
-                  </h4>
-                  <p class="p-3">
-                    6 Şubat depremlerinden sonra yaraları sarmak için ‘Gönül
-                    Bağı Projeleri’ni başlatan Turkcell’in bu kapsamda Hatay’da
-                    kuracağı Çağrı ve Mesleki Eğitim Merkezi, yerinde tanıtıldı.
-                    Bölgesel kalkınmanın ekonomik canlanmayla mümkün olacağı
-                    düşüncesiyle bir dizi proje geliştiren Turkcell, bu merkezde
-                    grup şirketi Global Bilgi’yle yıl içinde toplam 250
-                    depremzedeyi istihdam edecek. Merkez faaliyete geçtiğinde,
-                    Turkcell Akademi’yle 5 bin depremzedeye de mesleki eğitim
-                    verecek.
-                  </p>
-                </div>
-                <div class="col col-3 swiper-slide card-swiper" id="card4">
-                  <img src="./img/bip.png" alt="BiP" />
-                  <h4 class="my-5">
-                    BiP’in ‘Acil Durum Butonu’ hayata bağlıyor
-                  </h4>
-                  <p class="p-3">
-                    Türkiye’nin iletişim ve yaşam platformu BiP’in doğal afet ve
-                    acil durum anlarında vatandaşların kesintisiz iletişim
-                    sürdürebildikleri Acil Durum Butonu’na kayıtlı kişi sayısı 3
-                    milyonu geçti. Acil Durum Butonu ile tüm operatör
-                    kullanıcıları önceden belirledikleri kişilere tek tuşla
-                    güvende oldukları ya da yardıma ihtiyaç duydukları bilgisini
-                    …
-                  </p>
-                </div>
-                <div class="col col-3 swiper-slide card-swiper" id="card5">
-                  <img
-                    src="./img/1300-kislik-ekip.png"
-                    alt="1300 Kişilik ekip"
-                  />
-                  <h4 class="my-5">Yoğun kar yağışına 1300 kişilik ekip</h4>
-                  <p class="p-3">
-                    Altyapısına yaptığı yatırımlarla pandemi döneminde
-                    müşterilerine eksiksiz bir hizmet sunan Turkcell, tüm acil
-                    durum ve afetlerde olduğu gibi Türkiye’nin büyük bir
-                    bölümünü etkisi altına alan kar yağışıyla birlikte
-                    oluşabilecek olası kesintilerin önüne geçmek için tüm
-                    illerde önlemlerini aldı. Bu amaçla özel ekipmanlara sahip
-                    1300 saha personeli …
-                  </p>
-                </div>
-                <div class="col col-3 swiper-slide card-swiper" id="card6">
-                  <img
-                    src="./img/izmir-deprem-kahramanlari.png"
-                    alt="İzmir depreminin kahramanları"
-                  />
-                  <h4 class="my-5">
-                    İzmir depreminin kahramanlarına iletişim desteği
-                  </h4>
-                  <p class="p-3">
-                    Türkiye’nin Turkcell’i, İzmir’de meydana gelen deprem
-                    felaketinin ardından onlarca kişiyi enkaz altından çıkaran
-                    arama kurtarma ekiplerine destek olmak için özel bir
-                    iletişim paketi oluşturdu. İzmir’deki arama kurtarma
-                    faaliyetlerine katılan Turkcell …
-                  </p>
-                </div>
-                <div class="col col-3 swiper-slide card-swiper" id="card7">
-                  <img src="./img/samsun.png" alt="Giresuna destek" />
-                  <h4 class="my-5">
-                    Turkcell’den Giresun’a Paycell ile yardım eli
-                  </h4>
-                  <p class="p-3">
-                    Turkcell, sel felaketinin yaşandığı Giresun’da faaliyet
-                    gösteren 350 esnafa ve 200 aileye hibe desteğinde bulundu.
-                    Felakette zarar gören dükkan sahiplerine ve ailelere yapılan
-                    destek, kişilerin adına düzenlenen Paycell kartlarına
-                    tanımlanacak.
-                  </p>
-                </div>
-              </div>
-              <button class="swiper-button-prev swiper-btn"></button>
-              <button class="swiper-button-next swiper-btn"></button>
+            <div class="swiper-slide card-swiper" id="card2">
+              <img src="./img/acil-mobil.jpg" alt="AFAD acil mobil app" />
+              <h4 class="my-5">
+                AFAD Acil mobil uygulamasının altyapısı Turkcell güvencesinde
+              </h4>
+              <p class="p-3">
+                Türkiye’nin Turkcell’i ülkemizde yıkımlara neden olan
+                depremlerin ardından yaraları sarmak için ‘Gönül Bağı Projeleri’
+                ile harekete geçiyor. İstihdamdan üretime, sanattan
+                gastronomiye, psikolojiden eğitime kadar pek çok alanda proje
+                seferberliği başlatan Turkcell, “Bura bizim memleket” diyerek
+                bölgeyi iyileştirmek için yola çıkıyor...
+              </p>
+            </div>
+            <div class="swiper-slide card-swiper" id="card3">
+              <img
+                src="./img/gonul-bagi-ile-hatayda.jpg"
+                alt="Gönül Bağı Hatayda"
+              />
+              <h4 class="my-5">
+                Gönül Bağı’ ile Hatay’da yüzlerce kişiye iş, binlerce kişiye
+                eğitim
+              </h4>
+              <p class="p-3">
+                6 Şubat depremlerinden sonra yaraları sarmak için ‘Gönül Bağı
+                Projeleri’ni başlatan Turkcell’in bu kapsamda Hatay’da kuracağı
+                Çağrı ve Mesleki Eğitim Merkezi, yerinde tanıtıldı. Bölgesel
+                kalkınmanın ekonomik canlanmayla mümkün olacağı düşüncesiyle bir
+                dizi proje geliştiren Turkcell, bu merkezde grup şirketi Global
+                Bilgi’yle yıl içinde toplam 250 depremzedeyi istihdam edecek.
+                Merkez faaliyete geçtiğinde, Turkcell Akademi’yle 5 bin
+                depremzedeye de mesleki eğitim verecek.
+              </p>
+            </div>
+            <div class="swiper-slide card-swiper" id="card4">
+              <img src="./img/bip.png" alt="BiP" />
+              <h4 class="my-5">BiP’in ‘Acil Durum Butonu’ hayata bağlıyor</h4>
+              <p class="p-3">
+                Türkiye’nin iletişim ve yaşam platformu BiP’in doğal afet ve
+                acil durum anlarında vatandaşların kesintisiz iletişim
+                sürdürebildikleri Acil Durum Butonu’na kayıtlı kişi sayısı 3
+                milyonu geçti. Acil Durum Butonu ile tüm operatör kullanıcıları
+                önceden belirledikleri kişilere tek tuşla güvende oldukları ya
+                da yardıma ihtiyaç duydukları bilgisini …
+              </p>
+            </div>
+            <div class="swiper-slide card-swiper" id="card5">
+              <img src="./img/1300-kislik-ekip.png" alt="1300 Kişilik ekip" />
+              <h4 class="my-5">Yoğun kar yağışına 1300 kişilik ekip</h4>
+              <p class="p-3">
+                Altyapısına yaptığı yatırımlarla pandemi döneminde müşterilerine
+                eksiksiz bir hizmet sunan Turkcell, tüm acil durum ve afetlerde
+                olduğu gibi Türkiye’nin büyük bir bölümünü etkisi altına alan
+                kar yağışıyla birlikte oluşabilecek olası kesintilerin önüne
+                geçmek için tüm illerde önlemlerini aldı. Bu amaçla özel
+                ekipmanlara sahip 1300 saha personeli …
+              </p>
+            </div>
+            <div class="swiper-slide card-swiper" id="card6">
+              <img
+                src="./img/izmir-deprem-kahramanlari.png"
+                alt="İzmir depreminin kahramanları"
+              />
+              <h4 class="my-5">
+                İzmir depreminin kahramanlarına iletişim desteği
+              </h4>
+              <p class="p-3">
+                Türkiye’nin Turkcell’i, İzmir’de meydana gelen deprem
+                felaketinin ardından onlarca kişiyi enkaz altından çıkaran arama
+                kurtarma ekiplerine destek olmak için özel bir iletişim paketi
+                oluşturdu. İzmir’deki arama kurtarma faaliyetlerine katılan
+                Turkcell …
+              </p>
+            </div>
+            <div class="swiper-slide card-swiper" id="card7">
+              <img src="./img/samsun.png" alt="Giresuna destek" />
+              <h4 class="my-5">
+                Turkcell’den Giresun’a Paycell ile yardım eli
+              </h4>
+              <p class="p-3">
+                Turkcell, sel felaketinin yaşandığı Giresun’da faaliyet gösteren
+                350 esnafa ve 200 aileye hibe desteğinde bulundu. Felakette
+                zarar gören dükkan sahiplerine ve ailelere yapılan destek,
+                kişilerin adına düzenlenen Paycell kartlarına tanımlanacak.
+              </p>
             </div>
           </div>
         </div>

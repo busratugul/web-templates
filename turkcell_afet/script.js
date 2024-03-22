@@ -1,26 +1,40 @@
-let swiper = new Swiper('#swiper-1', {
+const swiper1 = new Swiper('#swiper-1', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 4,
-  spaceBetween: 15,
+  slidesPerView: "auto",
+  spaceBetween: 5,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false, // Kullanıcı etkileşimi ile kaydırmayı devre dışı bırakma
   },
 
-  // Navigation arrows
+  breakpoints: {
+    // Ekran genişliği 576 pikselden küçükse
+    576: {
+      slidesPerView: 2,
+    },
+    // Ekran genişliği 768 pikselden küçükse
+    768: {
+      slidesPerView: 3,
+    },
+    // Ekran genişliği 992 pikselden küçükse
+    992: {
+      slidesPerView: 4,
+    },
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
 })
 
-swiper = new Swiper('#swiper-2', {
+const swiper2 = new Swiper('#swiper-2', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 4,
+  slidesPerView: "auto",
   spaceBetween: 15,
   autoplay: false,
 
@@ -28,6 +42,67 @@ swiper = new Swiper('#swiper-2', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    // Ekran genişliği 576 pikselden küçükse
+    576: {
+      slidesPerView: 2,
+    },
+    // Ekran genişliği 768 pikselden küçükse
+    768: {
+      slidesPerView: 3,
+    },
+    // Ekran genişliği 992 pikselden küçükse
+    992: {
+      slidesPerView: 4,
+    },
+  },
+})
+
+const swiper3 = new Swiper('#swiperX', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 15,
+  autoplay: false,
+  breakpoints: {
+    // Ekran genişliği 576 pikselden küçükse
+    576: {
+      slidesPerView: 2,
+    },
+    // Ekran genişliği 768 pikselden küçükse
+    768: {
+      slidesPerView: 3,
+    },
+    // Ekran genişliği 992 pikselden küçükse
+    992: {
+      slidesPerView: 4,
+    },
+  },
+})
+
+const swiper4 = new Swiper('#swiperY', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 15,
+  autoplay: false,
+  breakpoints: {
+    // Ekran genişliği 576 pikselden küçükse
+    576: {
+      slidesPerView: 2,
+    },
+    // Ekran genişliği 768 pikselden küçükse
+    768: {
+      slidesPerView: 3,
+    },
+    // Ekran genişliği 992 pikselden küçükse
+    992: {
+      slidesPerView: 4,
+    },
   },
 })
 
