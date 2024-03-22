@@ -146,10 +146,9 @@ header {
   background-color: var(--yellow);
   color: var(--blue);
 }
-
-/* .swiper-wrapper {
+.boxes-container {
   overflow-x: scroll;
-} */
+}
 
 .card-swiper:hover {
   cursor: pointer;
