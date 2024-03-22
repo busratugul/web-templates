@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Source+Sans+3:wght@200..900&display=swap');
+
 :root {
   --blue: #07377e;
   --yellow: #ffcd00;
@@ -10,8 +12,7 @@
   box-sizing: border-box;
   text-decoration: none;
   outline: none;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Hind Vadodara', sans-serif;
 }
 
 html {
@@ -43,12 +44,17 @@ img {
   object-fit: contain;
 }
 
+p {
+  font-size: 16px;
+}
+
 .col p {
   font-weight: 400;
 }
 
 .icon {
   width: 18rem !important;
+  margin-top: 1.5rem;
 }
 
 header {
@@ -61,6 +67,7 @@ header {
 .turkcell-logo {
   width: 4rem;
   align-self: center;
+  cursor: pointer;
 }
 
 .section-1 {
@@ -95,33 +102,24 @@ header {
   color: var(--gray);
 }
 
-.section-2 .boxes {
-  overflow-x: scroll;
-}
-
 .section-3 {
   background-color: var(--gray);
   color: var(--blue);
 }
 
-.swiper-slide {
-  min-height: 10rem;
+.swiper-slide h4,
+.swiper-slide p {
+  text-align: center;
+  max-width: 30rem;
+  margin: 0 auto;
+  overflow-wrap: break-word;
 }
 
-.swiper-btn {
+.swiper-button-prev,
+.swiper-button-next {
   background-color: transparent;
-  outline: none;
-  border: none;
   color: var(--blue);
-  font-weight: 600;
-}
-
-.section-4 .swiper-btn {
-  margin-top: -10rem;
-}
-
-.section-5 .swiper-btn {
-  margin-top: -17rem;
+  font-weight: bolder;
 }
 
 .afad-btn {
@@ -149,9 +147,17 @@ header {
   color: var(--blue);
 }
 
+/* .swiper-wrapper {
+  overflow-x: scroll;
+} */
+
 .card-swiper:hover {
   cursor: pointer;
   opacity: 0.8;
+}
+
+.img-p p {
+  text-align: left;
 }
 
 footer {
@@ -169,6 +175,12 @@ footer {
   .turkcell-logo {
     width: 3rem;
   }
+}
+
+@media (max-width: 991px) {
+  .card-swiper img {
+    width: 15rem;
+  }
 
   picture img {
     margin: 0;
@@ -176,9 +188,5 @@ footer {
     width: 100%;
     object-fit: cover;
     display: block;
-  }
-
-  .boxes-container {
-    overflow: scroll;
   }
 }
