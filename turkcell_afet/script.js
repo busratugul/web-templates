@@ -4,22 +4,18 @@ const swiper1 = new Swiper('#swiper-1', {
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 15,
-  /* centeredSlides: true, */
   autoplay: {
     delay: 5000,
-    disableOnInteraction: false, // Kullanıcı etkileşimi ile kaydırmayı devre dışı bırakma
+    disableOnInteraction: false,
   },
 
   breakpoints: {
-    // Ekran genişliği 576 pikselden küçükse
     576: {
       slidesPerView: 2,
     },
-    // Ekran genişliği 768 pikselden küçükse
     768: {
       slidesPerView: 3,
     },
-    // Ekran genişliği 992 pikselden küçükse
     992: {
       slidesPerView: 4,
     },
@@ -31,29 +27,18 @@ const swiper1 = new Swiper('#swiper-1', {
 })
 
 const swiper2 = new Swiper('#swiper-2', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 15,
   autoplay: false,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
   breakpoints: {
-    // Ekran genişliği 576 pikselden küçükse
     576: {
       slidesPerView: 2,
     },
-    // Ekran genişliği 768 pikselden küçükse
     768: {
       slidesPerView: 3,
     },
-    // Ekran genişliği 992 pikselden küçükse
     992: {
       slidesPerView: 3,
     },
@@ -61,25 +46,25 @@ const swiper2 = new Swiper('#swiper-2', {
       slidesPerView: 3,
     },
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 })
 
 const swiper3 = new Swiper('#swiperX', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
   slidesPerView: 'auto',
   spaceBetween: 15,
   autoplay: false,
   breakpoints: {
-    // Ekran genişliği 576 pikselden küçükse
     576: {
       slidesPerView: 2,
     },
-    // Ekran genişliği 768 pikselden küçükse
     768: {
       slidesPerView: 3,
     },
-    // Ekran genişliği 992 pikselden küçükse
     992: {
       slidesPerView: 4,
     },
@@ -153,9 +138,6 @@ document.querySelector('#card7').addEventListener('click', () => {
   )
 })
 
-document.querySelector(".turkcell-logo").addEventListener("click", () => {
-  window.open(
-    'https://www.turkcell.com.tr/',
-    '_blank'
-  )
+document.querySelector('.turkcell-logo').addEventListener('click', () => {
+  window.open('https://www.turkcell.com.tr/', '_blank')
 })
